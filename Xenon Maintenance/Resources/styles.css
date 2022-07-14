@@ -1,0 +1,1073 @@
+ 
+ *{
+  box-sizing: border-box;
+
+  
+
+}
+
+ html {
+    
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    
+  }
+
+  html , body{
+
+    
+
+    overflow-x: hidden;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  @font-face{
+    font-family: 'gotham';
+    src: url('./Fonts/GothamRoundedBold_21016.ttf');
+  }
+   
+   @font-face{
+    font-family: 'gothammed';
+    src:    url('./Fonts/GothamRoundedMedium_21022.ttf');
+    
+  }
+
+  h1{font-family: 'gotham';}
+  h2, h3, h4, h5, h6 {font-family: 'gothammed';}
+
+  p, li, a{
+    font-family: Helvetica, sans-serif;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  ol, ul {
+    list-style: none;
+  }
+
+
+.button {
+    border-radius: 30px;
+    background-color: #1A6CAE;
+    color: white;
+    padding: 1rem 1.67rem;
+    font-family: Helvetica, sans-serif !important;
+    vertical-align: center;
+    border: none;
+    
+  }
+
+  .buttonmob {
+    border-radius: 30px;
+    background-color: #1A6CAE;
+    color: white;
+    padding: 1rem 1rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .logo{
+    height: 3.4375rem;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+   
+  }
+
+  .logomob{
+    height: 2.4375rem;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+   
+  }
+
+  main{
+    position: relative;
+    top: 7.625rem;
+  }
+
+  @media only screen and (max-width: 690px){
+    
+    main{
+      position: relative;
+      top: 4.75rem;
+    }
+   
+
+
+  }
+
+ 
+  /* Header */ 
+
+ header {
+
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+  }
+
+ 
+  
+
+  .icon{
+    height: 2.4375rem;
+  }
+
+  .desktop nav{
+    display: flex;
+    width: 100%;
+  }
+  .nav-1, .nav-2{
+    width: 50%;
+    
+  }
+
+  .nav-1 ul,  .nav-2 ul{
+    display:flex;
+    
+  }
+  .nav-2 ul {
+    justify-content: flex-end;
+  }
+ 
+  .nav-1 ul li, .nav-2 ul li{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  li a.button{
+    margin-right: 1.5rem;
+  }
+
+
+  @media only screen and (min-width: 977px){
+
+header .tablet{
+  display: none;
+}
+
+header .mobile{
+  display: none;
+}
+
+
+
+  }
+
+  @media only screen and (min-width: 691px) and (max-width: 976px){
+
+    header .desktop {
+      display: none;
+    }
+
+    header .mobile{
+      display: none;
+    }
+  
+
+    .tablet nav{
+      display: flex;
+      width: 100%;
+    }
+
+    .nav-tab1 {
+      width: 60%;
+    }
+
+    .nav-tab2{
+      width: 40%;
+    }
+
+    .nav-tab1 ul, .nav-tab2 ul{
+
+    display:flex;}
+
+    .nav-tab2 ul{
+      justify-content: flex-end;
+    }
+
+    .nav-tab1 ul li, .nav-tab2 ul li{
+      display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    }
+
+
+  }
+
+  @media only screen and (min-width: 50px) and (max-width: 690px)
+
+  {
+    header .desktop  {
+      display: none;
+    }
+
+    header .tablet{
+      display: none;
+    }
+
+    .nav-mob1 ul{
+      display:flex;
+      width: 100%;
+    }
+
+    .nav-mob1 ul li{
+      width: 50%;
+      display: flex;
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .mobbut{
+    justify-content: center;
+    font-size: 0.50rem;
+    margin-right: 0.5rem;
+    }
+
+
+  }
+
+
+  /* Banner*/
+
+  .banner{
+
+    background-image: url(./images/Xenon\ Squarespace\ images\ \(15\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .banner-text{
+    max-width: 93.75rem;
+    height:auto;
+    padding: 1.1rem;
+  }
+
+  .banner-text h1{
+
+    font-size: 6rem;
+    max-width: 80%;
+  }
+
+  .banner-text p{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    max-width: 80%;
+
+
+  }
+
+  @media only screen and (max-width: 1400px){
+
+    .banner{
+      min-height: 70vh;
+    }
+
+    
+
+    .banner-text h1{
+
+      font-size: 4.5rem;
+      max-width: 100%;
+    }
+  
+
+
+  }
+
+  @media only screen and (max-width: 600px){
+
+    .banner{
+      min-height: 60vh;
+    }
+
+    .banner-text h1{
+
+      font-size: 4rem;
+      max-width: 100%;
+    }
+  
+
+
+  }
+
+  
+  @media only screen and (max-width: 450px){
+
+    .banner{
+      min-height: 50vh;
+      background-position: center;
+    }
+
+    .banner-text h1{
+
+      font-size: 3.3rem;
+      max-width: 80%;
+    }
+
+    
+  
+
+
+  }
+
+  @media only screen and (max-width: 385px){
+
+    .banner{
+      min-height: 50vh;
+      background-position: center;
+    }
+
+    .banner-text h1{
+
+      font-size: 2.3rem;
+      max-width: 80%;
+    }
+
+    .banner-text p{
+
+      font-size: 1rem;
+      max-width: 80%;
+    }
+  }
+
+    @media only screen and (max-width: 300px){
+
+      .banner-text h1{
+  
+        font-size: 2.2rem;
+        max-width: 80%;
+      }
+  
+      .banner-text p{
+  
+        font-size: 1rem;
+        max-width: 80%;
+      }
+  
+
+
+    }
+  
+
+  
+
+
+
+  /* Problem Statement */
+
+ .statement{
+  margin: 1.5rem;
+ }
+
+ .statement-container{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 1.2rem;
+  background-color: #f3f3f3;
+ }
+
+ .split1{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 1.5rem;
+ }
+
+ .split1 h2{
+
+  font-size: 3rem;
+  font-weight: 700;
+ }
+
+ .split2 h2 , .split3 h2{
+
+  font-size: 1.1rem;
+  font-weight: bolder;
+ }
+
+ .split2 p, .split3 p{
+
+  margin-top: 1.8rem;
+  line-height: 1.4;
+ }
+
+ @media only screen and (max-width: 855px){
+
+  .statement-container{
+    padding: 2rem;
+    grid-template-rows: 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr;
+   }
+
+   .split1{
+
+    padding-top: 0;
+    margin-top: none;
+   }
+
+   .split2 , .split3 {
+    
+    padding: 1.5rem;
+
+   }
+
+
+
+
+ }
+
+ @media only screen and (max-width: 450px){
+
+  .statement-container{
+    padding: 1rem;
+    grid-template-rows: 0.5fr 1fr 1fr !important;
+    grid-template-columns: 1fr;
+   }
+
+  .split1 h2{
+
+    font-size: 2.5rem;
+    font-weight: 700;
+   }
+
+
+
+ }
+
+ @media only screen and (max-width: 350px){
+
+  .statement-container{
+    padding: 0.3rem;
+    grid-template-rows: 0.5fr 1fr 1fr !important;
+    grid-template-columns: 1fr;
+   }
+
+  .split1 h2{
+
+    font-size: 1.8rem;
+    font-weight: 700;
+   }
+  }
+
+  @media only screen and (max-width: 300px){
+
+    .split1 h2{
+  
+      font-size: 1.6rem;
+      font-weight: 700;
+     }
+    }
+
+ 
+
+
+  
+
+
+
+
+/* Our Services */
+
+
+.services{
+  min-width: 100%;
+}
+
+.services-heading{
+  padding: 1.25rem;
+  font-weight: 400;
+  font-size: 3rem;
+
+
+}
+
+.services-container{
+
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+
+  padding: 3rem;
+  min-width: 100%;
+}
+
+.services-heading h1{
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.CCTV , .Access-Control , .Fire-Alarm{
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-width: 33.33%;
+  padding: 1.2rem;
+ 
+}
+
+.Emergency-Lighting ,  .KNX , .Intruder-Alarm{
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-width: 33.33%;
+  padding: 1.2rem;
+ 
+}
+
+
+
+
+
+
+.servimg{
+
+  max-width: 3.5rem ;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.servdiv2{
+  margin-bottom: 1rem; 
+}
+
+.servdiv2 p{
+font-weight: bold;
+font-size: 1.5rem;
+
+}
+
+.servdiv3{
+  text-align: center;
+  max-width: 12rem
+}
+
+.servdiv4{
+
+  margin-top: 2rem;
+}
+.servdiv4 button{
+  
+  margin: 0 auto;
+} 
+
+@media only screen and (max-width: 905px){
+
+
+  .services-container{
+
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+  
+    padding: 3rem;
+    min-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 635px){
+
+
+  .services-container{
+
+    display: grid;
+   grid-template-columns: 1fr;
+  
+    padding: 3rem;
+    min-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 366px){
+
+  .services-heading{
+    padding: 1.25rem;
+    font-weight: 400;
+    font-size: 3rem;
+  
+  
+  }
+
+  .services-container{
+
+    
+    padding: 1.5rem;
+    
+  }
+
+  p.servhead{
+
+    text-align: center;
+  }
+
+ 
+}
+
+
+
+
+
+ /* Consultation*/
+
+ .consultation{
+
+  background-image: url(./images/1\ -\ Xenon\ Vans.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 66vh;
+ 
+ }
+
+ .consul-bg{
+width: 100%;
+height: 66vh;
+background-color: rgba(0,0,0,0.6);
+display: flex;
+justify-content: center;
+align-items: center;
+
+ }
+
+ .consul-container{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+  padding-right: 2vw;
+  padding-left: 2vw;
+ }
+
+ .consul-container h1{
+  font-size: 5.7rem;
+  text-align: center;
+  margin-bottom: 2rem;
+ }
+
+ .consul-container p{
+  font-size: 1.3rem;
+  text-align: center;
+ }
+
+ .consulbut{
+  padding: 2rem;
+  margin: 0 auto;
+ }
+
+ .consulbut  button{
+ font-size: 1.2rem ;
+ }
+
+ @media only screen and (max-width: 620px){
+
+
+  .consul-container h1{
+    font-size: 3rem;
+  }
+
+  .consulbut  button{
+    font-size: 1rem ;
+    }
+
+ }
+
+ @media only screen and (max-width: 300px){
+
+  .consul-container h1{
+    font-size: 2rem;
+  }
+
+  .consul-container p{
+    font-size: 1rem;
+    text-align: center;
+   }
+
+  .consulbut  button{
+    font-size: 0.8rem ;
+    }
+
+
+ }
+
+
+  /* Why Xenon */
+
+
+  .whyxenon-container h1{
+    padding-top: 3.125rem;
+    padding-right: 1.625rem;
+    padding-bottom: 1.625rem;
+    padding-left: 1.625rem;
+    font-size: 3rem;
+
+  }
+
+  .whyxenon-container ul{
+
+    display: flex;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .wxul li{
+
+    max-width: 25%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+    
+  }
+
+  .image-box{
+
+   width: 100%;
+   overflow: hidden;
+    
+  }
+
+  .image-box img{
+    width: 100%;
+    height: auto;
+  }
+
+  .wxul li h3{
+
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .wxul li p{
+
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  @media screen and (max-width: 1174px){
+
+
+    .whyxenon-container ul{
+
+      padding-top: 2rem;
+    }
+
+    .wxul li{
+
+      max-width: 33%;
+      margin-top: 2rem;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 839px){
+
+    .wxul li{
+
+      max-width: 50%;
+      
+    }
+  }
+
+  @media screen and (max-width: 587px){
+
+    .wxul li{
+
+      max-width: 100%;
+      
+    }
+  }
+
+  @media only screen and (max-width: 300px){
+
+    .whyxenon-container h1{
+
+      font-size: 2rem;
+    }
+
+    .wxul li h3{
+
+      
+      font-size: 1rem;
+    }
+  
+    .wxul li p{
+  
+      
+      font-size: 0.8rem;
+    }
+
+    .whyxenon-container ul{
+
+      padding-top: 1rem;
+    }
+  
+
+
+  }
+
+
+/* CLient Logos */
+
+.client-logo-section{
+  padding: 2rem 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.client-logo-heading{
+
+  padding: 2rem 0;
+}
+
+.client-logo-heading h2{
+
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.logo-img-container{
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.logo-img{
+
+  padding: 1.1rem;
+  
+}
+
+.logo-img img{
+
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 750px){
+
+  .logo-img-container{
+
+   
+    grid-template-columns: 1fr;
+  }
+
+  .logo-img{
+
+    padding: 0.5rem;
+    
+  }
+
+}
+
+@media only screen and (max-width: 300px){
+
+  .client-logo-heading h2{
+
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+}
+
+
+
+
+
+
+
+  /* Footer */
+
+  footer{
+
+    position: relative;
+    top: 10rem;
+   
+    
+  }
+
+  .footer-container{
+
+    padding: 2.68rem 1.75rem;
+    width: 100%;
+    display: flex; 
+    color: white;
+    background-color: #333333;
+    flex-wrap: wrap;
+  }
+
+ .email , .links{
+    min-width: 50%;
+    
+  }
+
+  .heading{
+font-size: 2.5rem;
+font-weight: 600;
+
+  }
+
+ .email p{
+  margin-bottom: 1.5rem;
+
+ }
+
+ .links{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ }
+
+ .services , .contact{
+
+  min-width: 50%;
+
+
+ }
+
+ .services h3{
+
+  margin-bottom: 1.5rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+ }
+ .services ul li{
+
+  margin-bottom: 0.5rem;
+ }
+
+ .services ul li a{
+color: white !important;
+text-decoration: underline !important;
+
+ }
+
+ .contact h3{
+
+  margin-bottom: 1.5rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+ }
+
+ .contact ul li{
+
+  margin-bottom: 0.5rem;
+ }
+
+ @media only screen and (min-width: 511px) and (max-width: 967px){
+
+  .email , .links{
+    min-width: 100%;
+    
+  }
+
+  .links{
+    margin-top: 2rem;
+    justify-content: flex-start;
+  }
+
+  
+
+  
+
+
+ }
+
+ @media only screen and (max-width: 510px){
+
+  .heading{
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+      }
+
+      .services h3{
+
+       
+        font-size: 1.8rem;
+        font-weight: 600;
+       }
+
+      .contact h3{
+
+        font-size: 1.8rem;
+        font-weight: 600;
+       }
+
+  .email , .links{
+    min-width: 100%;
+    
+  }
+
+  .services{
+
+    min-width: 100%;
+    margin-top: 2rem;
+
+
+  }
+
+  .contact{
+    margin-top: 2rem;
+    min-width: 100%;
+  }
+
+
+
+ }
+  
+
+
+
+
+
+
+
+  
+  
+  
